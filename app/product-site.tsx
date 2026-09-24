@@ -244,8 +244,8 @@ export default function ProductSite() {
 						<a href="#safety">Control</a>
 						<a href="#sessions">Sessions</a>
 					</nav>
-					<a className="nav-command" href="#install">
-						$ cloud-tui <span>↗</span>
+					<a className="nav-command" href="https://www.npmjs.com/package/cloud-tui" target="_blank">
+						cloud-tui <span>↗</span>
 					</a>
 				</header>
 
@@ -884,18 +884,10 @@ export default function ProductSite() {
 								parallel work legible, and stop for the decisions only a person
 								should make.
 							</p>
-							<div className="install-command">
-								<span>$</span>
+							<a href="https://www.npmjs.com/package/cloud-tui" target="_blank" className="install-command">
 								<code>cloud-tui</code>
-								<button
-									type="button"
-									onClick={copyCommand}
-									aria-label="Copy cloud-tui command"
-								>
-									copy
-								</button>
 								<small aria-live="polite">{copyStatus}</small>
-							</div>
+							</a>
 							<p className="install-note">
 								Run it from the project directory you want it to use.
 							</p>
